@@ -1,8 +1,0 @@
-
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-	.text-align {
-		text-align: center;
-	}
-}
