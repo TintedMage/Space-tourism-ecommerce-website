@@ -1,2 +1,2 @@
-# Space-tourism-multipage-website
-FY project for sem 1( web designing concepts). Multipage space tourism website using bootstrap and a backend
+# Space-tourism-ecommerce-website
+FY project for sem 1( web designing concepts). Ecommerce website using css framework and a backend based on space theme.
