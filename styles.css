@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
 /* Navbar */
-@import url(./assets/shared/navbar/navbar.css);
+@import url(./assets/shared/header/navbar.css);
 
 /* CSS Reset */
 	* {margin: 0; padding: 0; box-sizing: border-box; }
@@ -15,7 +15,7 @@
 /* Global */
 .center {
 	width: 100%;
-	max-width: 1600px;
+	max-width: 1400px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -25,7 +25,7 @@
 /* Home */
 .homebg {
 	color: aliceblue;
-	background-image: url('./assets/home/bg.webp');
+	background-image: url('./assets/images/bg.webp');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;

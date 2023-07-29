@@ -3,4 +3,9 @@ FY project for sem 1( web designing concepts). Ecommerce website using css frame
 
 Idea inspired by Frontend-Mentor challange - [Space tourism multi-page website](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3)
 
+Technologies used:
+- HTML5, CSS, Javascript
+- mongoDB, express, nodejs
+
+
 [Visit Site](https://space-tourism-ecommerce-website.vercel.app/) 
