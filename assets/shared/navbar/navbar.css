@@ -8,18 +8,11 @@
 	width: 100%;
 	padding: 1rem 2rem;
 	z-index: 1000;
-	background-color: #fff;
+
+	background-color: rgba(0, 0, 0, 0.904);
+	opacity: 98%;
 	box-shadow:
 		0 10px 27px rgba(0, 0, 0, 0.05);
-}
-
-.navbar {
-	width: 100%;
-	max-width: 1230px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem ;
 }
 
 .hamburger {
@@ -102,4 +95,15 @@
 		transform: translateY(-8px) rotate(-45deg);
 	}
 
+}
+
+
+@supports (-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or
+  (backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) {
+  .header {
+	opacity: 96%;
+    transition: all 0.5s ease-in-out;
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  }
 }
