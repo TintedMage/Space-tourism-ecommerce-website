@@ -1,5 +1,7 @@
 :root {
+	--bg-color: #29173d;
+
 	--navbar-background: #000000;
-	--navbar-logo: #00ffff;
-	--navbar-link: #00ffff;
+	--navbar-link: #9f77d6;
+	--navbar-logo: var(--navbar-link);
 }

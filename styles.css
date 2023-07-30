@@ -12,18 +12,16 @@
 	a {text-decoration: none;}
 	
 /* Global Styles */
-	
+	html{
+		background-color:  var(--bg-color);
+	}
 	body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
 		font-family: 'Roboto', sans-serif;
-		background-color: blueviolet;
-		background-image: url('./assets/images/bgGradient.webp');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
+		background: url("./assets/images/stars.webp") center / cover no-repeat fixed ;
 	}	
 
 	main { 
