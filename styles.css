@@ -12,20 +12,19 @@
 	a {text-decoration: none;}
 	
 /* Global Styles */
-	html {
-		font-family: 'Roboto', sans-serif;
-		background-image: url('./assets/images/bgGradient.webp');
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: cover;
-		background-attachment: fixed;
-	}
+	
 	body {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
 		padding: 1em 2em;
+		font-family: 'Roboto', sans-serif;
+		background-image: url('./assets/images/bgGradient.webp');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
 	}	
 
 	main { 
