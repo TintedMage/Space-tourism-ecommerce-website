@@ -1,118 +1,32 @@
-/* Navbar */
-.header{
-	position: fixed;
+header{
+	width: 100%;
 	display: flex;
 	justify-content: center;
+	position: sticky;
 	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 1rem 2rem;
-	z-index: 1000;
-
-	background-color: rgba(0, 0, 0, 0.904);
-	opacity: 98%;
-	box-shadow:
-		0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
-.navbar {
+nav {
 	width: 100%;
 	max-width: 1600px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem ;
 }
 
-.hamburger {
-	display: none;
-}
-
-.bar {
-	display: block;
-	width: 25px;
-	height: 3px;
-	margin: 5px auto;
-	transition: all 0.3s ease-in-out;
-	background-color: #f6f5f5;
-}
-
-.nav-menu {
+nav ul {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.nav-item {
-	margin-left: 3rem;
+nav ul li a{
+	margin-left: 2em;
+	color: var(--navbar-link);
 }
 
-.nav-link{
-	font-size: 1rem;
-	font-weight: 400;
-	color: #475569;
-}
-
-.nav-link:hover{
-	color: #482ff7;
-}
-
-.nav-logo {
-	font-size: 2.1rem;
-	font-weight: 500;
-	color: #03a9a7;
-}
-
-@media only screen and (max-width: 760px) {
-	.nav-menu {
-		position: fixed;
-		left: 100%;
-		top: 5rem;
-		flex-direction: column;
-		background-color: #000000;
-		width: 100%;
-		border-radius: 10px;
-		text-align: center;
-		transition: 0.3s;
-		box-shadow:
-			0 10px 27px rgba(0, 0, 0, 0.05);
-	}
-
-	.nav-menu.active {
-		left: 0;
-	}
-
-	.nav-item {
-		margin: 2.5rem 0;
-	}
-
-	.hamburger {
-		display: block;
-		cursor: pointer;
-	}
-
-
-	.hamburger.active .bar:nth-child(2) {
-		opacity: 0;
-	}
-
-	.hamburger.active .bar:nth-child(1) {
-		transform: translateY(8px) rotate(45deg);
-	}
-
-	.hamburger.active .bar:nth-child(3) {
-		transform: translateY(-8px) rotate(-45deg);
-	}
-
-}
-
-
-@supports (-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or
-  (backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) {
-  .header {
-	opacity: 96%;
-    transition: all 0.5s ease-in-out;
-    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-  }
+.navbar-logo {
+	color: var(--navbar-logo);
+	font-size: 3em;
+	font-weight:bolder;
 }

@@ -1,36 +1,39 @@
-/* Font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
 
-/* Navbar */
-@import url(./assets/shared/header/navbar.css);
+/* Font */
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+/* CSS Imports */
+	@import url('/colors.css');
+	@import url('./assets/shared/header/navbar.css');
 
 /* CSS Reset */
 	* {margin: 0; padding: 0; box-sizing: border-box; }
-	html {font-family: 'Roboto', sans-serif;}
 	li {list-style: none;}
 	a {text-decoration: none;}
-	main {margin-top: 10em;display: flex;justify-content: center; width: 100%;}
-	footer {display: flex;justify-content: center; width: 100%;}
+	
+/* Global Styles */
+	html {
+		font-family: 'Roboto', sans-serif;
+		background-image: url('./assets/images/bgGradient.webp');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1em 2em;
+	}	
 
-/* Global */
-.center {
-	width: 100%;
-	max-width: 1400px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem ;
-}
-
-/* Home */
-.homebg {
-	color: aliceblue;
-	background-image: url('./assets/images/bg.webp');
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 100vh;
-}
-
-
-
+	main { 
+		display: flex;
+		align-items: center;
+		width: 100%;
+		max-width: 1200px;
+		height: 100vh;
+		flex-direction: column;
+	}
+	
