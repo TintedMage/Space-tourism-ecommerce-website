@@ -18,7 +18,6 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
-		padding: 1em 2em;
 		font-family: 'Roboto', sans-serif;
 		background-color: blueviolet;
 		background-image: url('./assets/images/bgGradient.webp');
@@ -28,6 +27,7 @@
 	}	
 
 	main { 
+		padding: 1em 2em;
 		margin: 10%;
 		display: flex;
 		align-items: center;
