@@ -29,3 +29,27 @@
 		z-index: -1;
 		background: url("./assets/images/stars.webp") center / cover no-repeat fixed ;
 	}
+
+	body {
+		font-family: 'Roboto', sans-serif;
+		color: var(--text-color);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#home {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#about {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
