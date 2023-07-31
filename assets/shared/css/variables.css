@@ -1,0 +1,14 @@
+:root {
+	--navbar-link-font : 'Barlow Condensed', sans-serif;
+	--navbar-link-font-size: 1.1em;
+	--navbar-logo-font: 'Montserrat', sans-serif;
+	--navbar-logo-font-size: 1.7em;
+
+
+	--bg-color: #2C2A4A;
+
+	--navbar-background: #35335C;
+	--navbar-link: #fefdff;
+	--navbar-link-hover: #00fff7;
+	--navbar-logo: var(--navbar-link);
+}

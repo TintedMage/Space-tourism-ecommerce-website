@@ -1,10 +1,14 @@
 
 /* Font */
 	@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+  	@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&family=Montserrat&display=swap');
+	/* 	font-family: 'Barlow Condensed', sans-serif;
+		font-family: 'Montserrat', sans-serif; */
 
 /* CSS Imports */
-	@import url('/colors.css');
-	@import url('./assets/shared/header/navbar.css');
+	@import url('./assets/shared/css/variables.css');
+	@import url('./assets/shared/css/navbar.css');
+	@import url('./assets/shared/css/footer.css');
 
 /* CSS Reset */
 	* {margin: 0; padding: 0; box-sizing: border-box; }
@@ -15,23 +19,13 @@
 	html{
 		background-color:  var(--bg-color);
 	}
-	body {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-between;
-		font-family: 'Roboto', sans-serif;
-		background: url("./assets/images/stars.webp") center / cover no-repeat fixed ;
-	}	
-
-	main { 
-		padding: 1em 2em;
-		margin: 10%;
-		display: flex;
-		align-items: center;
+	html::before {
+		content: "";
+		position: fixed;
+		top: 0;
+		left: 0;
 		width: 100%;
-		max-width: 1400px;
-		height: 600vh;
-		flex-direction: column;
+		height: 100%;
+		z-index: -1;
+		background: url("./assets/images/stars.webp") center / cover no-repeat fixed ;
 	}
-	
