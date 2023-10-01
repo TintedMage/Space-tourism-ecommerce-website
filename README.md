@@ -9,5 +9,6 @@ Technologies used:
 
   ( frontend only , no backend used )
 
+space tourism website by khushal naik.
 
 [Visit Site](https://space-tourism-ecommerce-website.vercel.app/) 
