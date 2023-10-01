@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+	<link rel="stylesheet" href="./css/global.css">
+	<title>Cosmic Vovage</title>
+	<script src="./js/preload.js"></script>
+
+	<style>
+
+		.hero {
+			padding-top: 350px;
+			height: 70vh;
+		}	
+
+		h1 {
+			font: 200 8em 'Hustle', sans-serif;
+			letter-spacing: 10px;
+			line-height: 100%;
+			text-align: center;
+			color: #f35626;
+			background-image: linear-gradient(to right, #f32170, #eedd44);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			animation: hue 2s infinite linear,opacity 1s ease-in-out;
+			
+		}
+
+		@keyframes hue {
+			from { -webkit-filter: hue-rotate(0deg); }
+			to { -webkit-filter: hue-rotate(360deg); }
+		}
+
+
+		h2{
+			font-size: 3em;
+			color: rgba(180, 216, 247, 0.738);
+			animation: opacity 2s ease-in-out
+		}
+		h3 {
+			font-family: 'Barlow Condensed', sans-serif;
+			font-size: 1.2em;
+			color: rgba(240, 248, 255, 0.793);
+			animation: opacity 3s ease-in-out
+		}
+
+		
+		
+
+		@media screen and (max-width: 768px) {
+
+			.hero {
+				padding-top: 310px;
+			}
+
+			h1{
+				font-size: 6em;
+			}
+			h2{
+				display: none;
+				font-size: 1.3em;
+			}
+			h3 {
+				padding: 0 3em;
+				font-size: 0.9em;
+			}
+			
+		}
+
+		
+
+		.mars {
+			position: fixed;
+			top: 82%;
+			width: 150%;
+			height: auto;
+			z-index: -1;
+			animation: rotateImg 200s linear infinite;
+		}
+		@keyframes rotateImg{
+			from {transform: rotate(0deg);}
+			to {transform: rotate(360deg);}
+		}
+		
+		@keyframes opacity {
+			0% {scale: 0;}
+			100% {scale: 1;}
+		}
+
+	
+
+		.explore_cont {
+			position: relative;
+			height: 10em;
+			width: 10em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: 0.2s;
+			animation: opacity 3s ease-in-out;
+			z-index: 4;
+
+		}
+		
+		.explore_cont:hover {
+			font-size: 1.2em;
+
+		}
+		.rocket {
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			animation: spin 6s linear infinite;
+			height: 210px;
+			z-index: 10;
+			color: #ffffff;
+		}
+
+		@keyframes spin {
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+		}
+
+		.explore_link {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			font-size: 1.5em;
+			text-decoration: none;
+			color: #ffffff;
+			transition: 0.2s;
+			font-family: Hustle, sans-serif;
+			font-size: 2.5em;
+			letter-spacing: 3px;
+		}
+		
+		
+		.border	{
+			position: absolute;
+			border: #ffffff2f 2px solid !important;
+			border-radius: 300px;
+			height: inherit;
+			width: inherit;
+			box-shadow: 0 0 10px #ffffff;
+			background-color: #ffffff1a;
+			backdrop-filter: blur(5px);
+			z-index: 10;
+		}
+
+		.smoke{
+			opacity: 0.5;
+			color: #ffffff13;
+			text-shadow: 0 0 10px #00d9ff;
+		}
+		
+
+		
+	</style>
+</head>
+<body>
+
+	<img class="stars" src="./assets/img/stars.png" alt="">
+	<div class="twinkling"></div>
+	
+	<header class="container-fluid d-flex align-items-center sticky-top">
+		<nav class="container-xl navbar navbar-dark p-3">
+			<a class="navbar-brand" href="#">voyCo.</a>
+			<div class="navbar-nav d-flex flex-row align-items-center ">
+				<div class="d-flex flex-row align-items-center collapse ">
+					<a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+					<a class="nav-link" href="./about.html">About</a>
+					<a class="nav-link" href="./destinations.html">Destinations</a>
+					<a class="nav-link" href="./contact.html">Contact&nbsp;Us</a>
+				</div>
+				<button class="nav-link nav-login" onClick="profile()"><span class="fa-solid fa-user"></span></button>
+				<a href="javascript:void(0);" class="nav-ham" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero container-xl d-flex align-items-center justify-content-center flex-column">
+			<div class=" w-100 h-25 d-flex align-items-center justify-content-end flex-column text-center">
+				<h1>wElcoMe to voyCo</h1>
+				<h2>Your Cosmic Voyage Begins Here</h2>
+				<h3>Experience Space Tourism Like Never Before.<br><span class="">Yes, Your Next Vacation Can Be At The Edge Of The Space! </span></h3>
+				<p></p>
+			</div>
+			
+			<div class="explore_cont mt-2">
+				<div class="rocket">
+					<div class="d-flex flex-row-reverse align-items-center" >
+						<div class="fa fa-solid fa-shuttle-space"></div>
+						<div class="fa-solid fa-play smoke"></div>
+				</div>
+				</div>
+				<a class="border" href="./about.html">
+					<span class="explore_link" href="./about.html">eXploRe</span>
+				</a>
+			</div>
+			
+			<img class="mars" src="./assets/img/m.png" alt="">
+		</section>
+	</main>
+
+	
+	<footer class="footer mt-auto py-3 text-center">
+	  Khushal Naik Creations
+	</footer>
+  
+	<script>
+		let alertC = getCookie("cookieAlert");
+		if (alertC == "") {
+			alert("Hello, This website is exclusively front-end, without any backend functionality, and it is not designed for security considerations. Instead, it utilizes cookies to store all data, including login and user information.Hope You Like The Website!");
+			setCookie("cookieAlert", true , 30);
+		} else {
+		}
+		
+	</script>
+	<script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

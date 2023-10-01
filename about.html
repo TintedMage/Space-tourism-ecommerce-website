@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+	<link rel="stylesheet" href="./css/global.css">
+	<title>Cosmic Vovage | About</title>
+	<script src="./js/preload.js"></script>
+	<style>
+
+		
+
+		body {
+			color: rgba(255, 255, 255, 0.891);
+		}
+			
+		main {
+			height: 100vh;
+			scroll-snap-type: y mandatory;
+			overflow-y: auto;
+			overflow-x: none;
+			scrollbar-width: none; /* Firefox */
+   			-ms-overflow-style: none;  /* Internet Explorer 10+ */
+		}
+		main::-webkit-scrollbar { /* WebKit */
+			width: 0;
+			height: 0;
+		}
+
+		h1 {
+			margin-top: 0.5em;
+			font-size: 11em ;
+			font-family: Hustle,sans-serif;
+			letter-spacing: 1px;
+			background: linear-gradient(to right, #c156ff 0%, #fa5cc5 100%);			
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			text-shadow: 6px 6px 3px rgba(255, 255, 255, 0.149);
+		}
+
+		h2 {
+			font-family: Barlow,sans-serif;
+			font-weight: 600;
+			letter-spacing: 2px;
+			line-height: 200%;
+			text-transform: uppercase;
+			
+		}
+		.underline {
+			 padding-bottom: 10px;
+			 border-bottom-style: solid;
+			 border-bottom-width: 3.1px;
+			 width: fit-content;
+		 }
+	
+		
+		section {
+			width: 100%;
+			max-width: 1300px;
+			padding: 1em 1em;
+			display: flex;
+			flex-direction: row;
+			text-align: right;
+			align-items: center;
+			justify-content: center;
+			scroll-snap-align: center;
+		}
+
+		section:not(#hero) {
+			padding: 5em 1em;
+		}
+
+		section:nth-child(even) {
+			flex-direction: row-reverse;
+			text-align: left;
+		}
+
+
+		.infographic {
+			width: 50%;
+		}
+
+		.infotext {
+			width: 50%;
+		
+	}
+		.infotext p {
+			padding: 1em;
+			font-family: 'Barlow Condensed', sans-serif;
+			font-size: 1.3em;
+		}
+
+		#hero p {
+			font-family: 'Barlow Condensed', sans-serif;
+			font-size: 1.3em;
+			max-width: 900px;
+		}
+
+
+		
+
+		@media screen and (max-width: 768px) {
+
+			h1 {
+				font-size: 20vw;
+			}
+
+			#hero p {
+				font-size: calc(0.8em + 1vw);
+			}
+
+			section {
+				flex-direction: column !important;
+			}
+			.infographic {
+				width: 100%;
+				height: auto;
+			}
+			h2 {
+				text-align: center;
+			}
+			.infotext {
+				width: 100%;
+			}
+			.infotext p {
+				padding: 0.5em 0 !important;
+				margin: none !important;
+				text-align: center;
+			}
+		}
+
+		.destination {
+			background: linear-gradient(to top, #c156ff00 0%, #c156ff60 25%, #c156ff92 50%, #fa5cc500 100%);
+			font-family: Barlow,sans-serif;
+			font-weight: 600;
+			letter-spacing: 2px;
+			line-height: 200%;
+			text-transform: uppercase;
+			text-align: center;	
+			max-width: 100% !important;
+			padding: 50vh 0 !important;
+		}
+
+	</style>
+</head>
+<body>
+	<img class="stars" src="./assets/img/stars.png" alt="">
+	<div class="twinkling"></div>
+	
+	<header class="container-fluid d-flex align-items-center sticky-top">
+		<nav class="container-xl navbar navbar-dark p-3">
+			<a class="navbar-brand" href="#">voyCo.</a>
+			<div class="navbar-nav d-flex flex-row align-items-center ">
+				<div class="d-flex flex-row align-items-center collapse ">
+					<a class="nav-link " href="/index.html">Home</a>
+					<a class="nav-link active" aria-current="page" href="./about.html">About</a>
+					<a class="nav-link" href="./destinations.html">Destinations</a>
+					<a class="nav-link" href="./contact.html">Contact&nbsp;Us</a>
+				</div>
+				<button class="nav-link nav-login" onClick="profile()"><span class="fa-solid fa-user"></span></button>				<a href="javascript:void(0);" class="nav-ham" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+			</div>
+		</nav>
+	</header>
+
+	<main class="d-flex flex-column align-items-center">
+		<section id="hero" class="d-flex flex-column">
+			<h1 class="text-center p-5">yoUr cosMIc <span style="font-size: 1.4em;">VoYage</span> aWaIts</h1>
+			<h2 class="text-center pb-5"> <span class="underline">OUR MISSION</span></h2>
+			<p class="text-center container-sm pb-5 mb-5">At VoyCo, we're not just a space tourism company; we're the <b>Dreamers</b>, the <b>Explorers</b>, and the <b>pioneers</b> of cosmic adventure. Founded with a passion for making the cosmos accessible to all, VoyCo has embarked on a remarkable journey into the realms of space, offering you an <b>Experience</b> of a <b>Lifetime</b>.</p>
+		</section>
+		<section class="">
+			<img src="./assets/img/info-journey.webp" class="infographic" alt="footprint">
+			<div class="infotext">
+				<h2><span class="underline">Our Journey Begins</span></h2>
+				<p>VoyCo's story is one of determination and boundless curiosity. It started with a group of visionaries who gazed at the stars and dared to ask, "What if?"</p>
+			</div>
+		</section>
+		<section >
+			<img src="./assets/img/info-team.webp" class="infographic"  alt="team">
+			<div class="infotext">
+				<h2><span class="underline">Meet Our Stellar Team</span></h2>
+				<p>Our team is the backbone of VoyCo, a diverse group of experts with a shared enthusiasm for space exploration.</p>
+			</div>
+		</section>
+		<section>
+			<img src="./assets/img/info-spaceship.webp" class="infographic" alt="spaceship">
+			<div class="infotext">
+				<h2><span class="underline">Pushing the Frontiers of Technology</span></h2>
+				<p>At VoyCo, we don't just follow the path; we forge new ones.</p>
+			</div>
+		</section>
+		<section>
+			<img src="./assets/img/info-safety.webp" class="infographic" alt="spaceship">
+			<div class="infotext">
+				<h2><span class="underline">Safety and Sustainability First</span></h2>
+				<p>Your safety is our top priority. Our rigorous safety protocols and sustainable space travel practices are designed to protect both you and the celestial wonders we cherish.</p>
+			</div>
+		</section>
+		<section class="d-flex text-center flex-column destination">
+			<h2 class="underline">destinations</h2>
+			<p>Check out the amazing places you can travel to!</p>
+			<a href="./destinations.html" class="nav-login fa-solid fa-angles-right text-decoration-none"></a>
+		</section>
+	</main>
+	
+
+	
+
+	<footer class="footer">Khushal Naik Creations</footer>  
+	
+	<script src="./js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

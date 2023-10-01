@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+	<link rel="stylesheet" href="./css/global.css">
+	<title>Login | VoyCo</title>
+	<script src="./js/preload.js"></script>
+	<style>
+		main {
+			height: 100vh;
+			width: 100vw;
+		}
+
+		h1 {
+			font: 900 2em 'Monsterrat', sans-serif;
+			text-transform: uppercase;
+		}
+
+		.cred_bg {
+			border-radius: 6px;
+			background-color: rgb(224, 241, 255);
+			backdrop-filter: blur(5px);
+			width: 100%;
+			max-width: 400px;
+		}
+
+		input , input:hover {
+			background-color: transparent;
+			border: none;
+			outline: none;
+			width: 100%;
+		}
+
+		.input_group {
+			background-color: #ffffff ;
+			border-radius: 30px;
+			padding: 12px 20px;
+			margin: 5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+
+		.login_btn {
+			background-color: rgb(136, 255, 255);
+		}
+		
+		.s-t {
+			font-size: 0.85em;
+		}
+		
+	</style>
+</head>
+<body>
+	<img class="stars" src="./assets/img/stars.png" alt="">
+	<div class="twinkling"></div>
+	
+	
+
+	<main class="d-flex container-fluid text-center">
+		
+		<div class="container-sm d-flex flex-column justify-content-center align-items-center ">
+			
+			<div class="p-4 cred_bg m-3">
+				<form action="" id="login">
+					<h1 class="text-center pt-2">Login</h1>
+					<div>User: voyco - Pass: 0000</div>
+					<div class="text- text-center s-t p-3 " id="message" >Please Fill In the Credientials <br> To Book Your Voyage</div>
+					
+					<div class="d-flex flex-column" id="form">
+						<div class="input_group">
+							<input type="text"  placeholder="Username" name="username" id="username" required>
+							<i class="fa fa-user"></i>
+						</div>
+						<div class="input_group">
+							<input type="text" placeholder="Password" name="password" id="password" required>
+							<i class="fa fa-lock"></i>
+						</div>
+						<div class="d-flex pt-3 pb-3 s-t justify-content-between flex-column">
+							<span class="text-center d-flex align-items-center justify-content-center pe-3"><input type="checkbox" class="w-auto m-2">Dont&nbsp;Remember&nbsp;me!</span>
+							<a class="text-center m-2 text-decoration-none text-muted" href="">Forgot&nbsp;Password?</a>
+						</div>
+						<div class="input_group login_btn">
+							<input type="submit" value="Login">
+						</div>
+						<div>
+							<p class="pt-4 s-t">Dont have an account yet? <a href="./register.html">Register.</a></p>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div>
+
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer mt-auto py-3 text-center">
+		Khushal Naik Creations
+	</footer>
+
+	<script>
+
+		
+			document.getElementById("login").addEventListener("submit", function (event) {
+			event.preventDefault(); // Prevent the form from submitting normally
+
+			// Get the input values
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+
+
+
+			// In a real application, you would send this data to a server for authentication.
+			// For this example, we'll just display a message.
+			if (username === "voyco" && password === "0000") {
+				document.getElementById("message").innerHTML = "Login Successful. Redirecting...";
+				window.location.href = "./profile.html";
+				setCookie("login", true , 365)
+			} else {
+				document.getElementById("message").style.color = "red";
+				document.getElementById("message").innerHTML = "Login failed. Please check your username and password.";
+			}
+		});
+		
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
