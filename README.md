@@ -5,7 +5,9 @@ Idea inspired by Frontend-Mentor challange - [Space tourism multi-page website](
 
 Technologies used:
 - HTML5, CSS, Javascript
-- bootstrap 
+- bootstrap
+
+  ( frontend only , no backend used )
 
 
 [Visit Site](https://space-tourism-ecommerce-website.vercel.app/) 
